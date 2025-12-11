@@ -90,49 +90,163 @@ const RatingPart = () => {
                 <div className={`max-w-4xl mx-auto rounded-xl p-6 mb-12 text-white ${conversionRateBg}`}>
                     <h3 className="text-center text-xl font-bold mb-4">Points Conversion Rates</h3>
                     <div className="grid grid-cols-3 gap-4 text-center items-center">
-                        <div className="bg-white/10 p-4 rounded-lg h-[100px] px-[80px]"><span className='font-bold text-white'>1,000 Points </span> = $1 USDT</div>
-                        <div className="bg-white/10 p-4 rounded-lg h-[100px] px-[80px]"><span className='font-bold text-white'>5,000 Points</span> = $5 Gift Card</div>
-                        <div className="bg-white/10 p-4 rounded-lg h-[100px] px-[80px]"><span className='font-bold text-white'>10,000 Points</span> = $10 USDT</div>
+                        <div className="bg-white/10 p-4 rounded-lg h-[100px] md:px-[80px]"><span className='font-bold text-white'>1,000 Points </span> = $1 USDT</div>
+                        <div className="bg-white/10 p-4 rounded-lg h-[100px] md:px-[80px]"><span className='font-bold text-white'>5,000 Points</span> = $5 Gift Card</div>
+                        <div className="bg-white/10 p-4 rounded-lg h-[100px] md:px-[80px]"><span className='font-bold text-white'>10,000 Points</span> = $10 USDT</div>
                     </div>
                 </div>
 
-                <div className="max-w-6xl mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold mb-2 text-gray-800">Withdraw Your Earnings</h2>
-                    <p className="text-gray-600 mb-12">
-                        Multiple payout options to suit your needs. Fast, secure, and reliable withdrawals.
-                    </p>
+        <div className="max-w-6xl mx-auto px-4 text-center">
 
                     {/* Payout Options Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {/* Option 1: USDT (Crypto) */}
-                        <div className="p-6 border border-purple-500 rounded-xl bg-purple-50 relative">
-                            <span className="absolute top-0 left-0 bg-purple-600 text-white text-xs font-semibold px-3 py-1 rounded-br-lg">Most Popular</span>
-                            <h4 className="text-lg font-bold text-gray-800 mt-4">USDT (Crypto)</h4>
-                            <p className="text-sm text-gray-600 mb-4 ">Direct transfer to your crypto wallet.</p>
-                            <p className="text-xs text-gray-500">1,000 points ($1) minimum</p>
-                            <p className="text-xs text-gray-500 ">Processing: 24 hours</p>
-                        </div>
-                        {/* Option 2: Amazon Gift Cards */}
-                        <div className="p-6 border border-gray-200 rounded-xl bg-white">
-                            <h4 className="text-lg font-bold text-gray-800">Amazon Gift Cards</h4>
-                            <p className="text-sm text-gray-600 mb-4">Valid for Amazon purchases worldwide</p>
-                            <p className="text-xs text-gray-500">5,000 points ($5) minimum</p>
-                            <p className="text-xs text-gray-500">Processing: 24 hours</p>
-                        </div>
-                        {/* Option 3: iTunes Gift Cards */}
-                        <div className="p-6 border border-gray-200 rounded-xl bg-white">
-                            <h4 className="text-lg font-bold text-gray-800">iTunes Gift Cards</h4>
-                            <p className="text-sm text-gray-600 mb-4">For App Store and iTunes purchases</p>
-                            <p className="text-xs text-gray-500">5,000 points ($5) minimum</p>
-                            <p className="text-xs text-gray-500">Processing: 24 hours</p>
-                        </div>
-                        <div className="p-6 border border-gray-200 rounded-xl bg-white">Google Play Cards...</div>
-                        <div className="p-6 border border-gray-200 rounded-xl bg-white">Retail Gift Cards...</div>
-                        <div className="p-6 border border-gray-200 rounded-xl bg-white">Mobile Airtime...</div>
-                    </div>
+        <div className="max-w-4xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold mb-3">
+                <span className="text-green-600">Withdraw</span>
+                <span className="text-gray-900"> Your Earnings</span>
+            </h1>
+            <p className="text-gray-600">
+            Multiple payout options to suit your needs. Fast, secure, and reliable withdrawals.
+            </p>
+        </div>
+
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* USDT Card - Featured */}
+          <div className="bg-white rounded-2xl border-2 border-blue-500 p-6 shadow-sm">
+            <span className="inline-block bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
+             Most Popular
+            </span>
+            <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">USDT (Crypto)</h3>
+            <div className="flex justify-between items-center mb-1">
+              <span className="text-gray-600 text-sm">Minimum</span>
+              <span className="text-green-600 font-semibold text-sm">1,000 points ($1)</span>
+            </div>
+            <div className="flex justify-between items-center mb-3">
+              <span className="text-gray-600 text-sm">Processing</span>
+              <span className="text-gray-900 font-semibold text-sm">Instant</span>
+            </div>
+            <p className="text-gray-500 text-sm">
+              Direct transfer to your crypto wallet
+            </p>
+          </div>
+
+          {/* Amazon Gift Cards */}
+          <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+            <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Amazon Gift Cards</h3>
+            <div className="flex justify-between items-center mb-1">
+              <span className="text-gray-600 text-sm">Minimum</span>
+              <span className="text-green-600 font-semibold text-sm">5,000 points ($5)</span>
+            </div>
+            <div className="flex justify-between items-center mb-3">
+              <span className="text-gray-600 text-sm">Processing</span>
+              <span className="text-gray-900 font-semibold text-sm">24 hours</span>
+            </div>
+            <p className="text-gray-500 text-sm">
+              Valid for Amazon purchases worldwide
+            </p>
+          </div>
+
+          {/* iTunes Gift Cards */}
+          <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+            <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">iTunes Gift Cards</h3>
+            <div className="flex justify-between items-center mb-1">
+              <span className="text-gray-600 text-sm">Minimum</span>
+              <span className="text-green-600 font-semibold text-sm">5,000 points ($5)</span>
+            </div>
+            <div className="flex justify-between items-center mb-3">
+              <span className="text-gray-600 text-sm">Processing</span>
+              <span className="text-gray-900 font-semibold text-sm">24 hours</span>
+            </div>
+            <p className="text-gray-500 text-sm">
+              For App Store and iTunes purchases
+            </p>
+          </div>
+
+          {/* Google Play Cards */}
+          <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+            <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Google Play Cards</h3>
+            <div className="flex justify-between items-center mb-1">
+              <span className="text-gray-600 text-sm">Minimum</span>
+              <span className="text-green-600 font-semibold text-sm">5,000 points ($5)</span>
+            </div>
+            <div className="flex justify-between items-center mb-3">
+              <span className="text-gray-600 text-sm">Processing</span>
+              <span className="text-gray-900 font-semibold text-sm">24 hours</span>
+            </div>
+            <p className="text-gray-500 text-sm">
+              For Google Play Store purchases
+            </p>
+          </div>
+
+          {/* Retail Gift Cards */}
+          <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+            <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Retail Gift Cards</h3>
+            <div className="flex justify-between items-center mb-1">
+              <span className="text-gray-600 text-sm">Minimum</span>
+              <span className="text-green-600 font-semibold text-sm">10,000 points ($10)</span>
+            </div>
+            <div className="flex justify-between items-center mb-3">
+              <span className="text-gray-600 text-sm">Processing</span>
+              <span className="text-gray-900 font-semibold text-sm">48 hours</span>
+            </div>
+            <p className="text-gray-500 text-sm">
+              Walmart, Target, and local stores
+            </p>
+          </div>
+
+          {/* Mobile Airtime */}
+          <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+            <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Mobile Airtime</h3>
+            <div className="flex justify-between items-center mb-1">
+              <span className="text-gray-600 text-sm">Minimum</span>
+              <span className="text-green-600 font-semibold text-sm">3,000 points ($3)</span>
+            </div>
+            <div className="flex justify-between items-center mb-3">
+              <span className="text-gray-600 text-sm">Processing</span>
+              <span className="text-gray-900 font-semibold text-sm">Instant</span>
+            </div>
+            <p className="text-gray-500 text-sm">
+              Top up for all major networks
+            </p>
+          </div>
+        </div>
+        </div>
 
                     {/* Withdrawal Process */}
-                    <div className="mt-12 shadow-md py-6 rounded-xl">
+        <div className="mt-12 shadow-md py-6 rounded-xl">
                         <h3 className="text-2xl font-bold text-gray-800">Withdrawal Process</h3>
                         <p className='mb-5  text-gray-400 font-light'>Simple 3-step process to get your money</p>
                         <div className="flex justify-between max-w-2xl mx-auto">

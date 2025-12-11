@@ -1,11 +1,11 @@
 import React from 'react';
 import { DollarSign, Briefcase, Shield, Building2, Package, FileText, BarChart3, TrendingUp, Check, Smartphone, Wallet, ClipboardList, Award, Clock, Smile } from 'lucide-react';
-import logo from "../../../public/logo.png"
-import bg from "../../../public/alhamdulillah.jpg"
+import logo from "../../../../public/logo.png"
+import bg from "../../../../public/alhamdulillah.jpg"
 import { NavLink } from 'react-router-dom';
-import TrustSection from './Trusted';
+import TrustSection from './components/Trusted';
 import { FaUsers, FaCheckCircle, FaStar, FaTasks, FaBriefcase, FaMoneyBill, FaClock, FaHeadset, FaShieldAlt } from 'react-icons/fa';
-import Footer from '../../components/footer';
+import Footer from '../../../components/footer';
 import { FaGlobe, FaChartBar,  FaWallet, FaGift, FaMobileAlt } from 'react-icons/fa';
 import { FaUserPlus, FaCloudUploadAlt, FaCheckSquare, FaChartLine } from 'react-icons/fa';
 // import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn} from 'react-icons/fa';
